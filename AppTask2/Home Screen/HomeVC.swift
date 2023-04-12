@@ -15,6 +15,8 @@ class HomeVC: UIViewController {
    // var profileImg = ""
     //@IBOutlet weak var homeImageView: UIImageView!
     // home vc view modal object
+    
+    // kartik is sfrom gulabgarh village in jagadhri
     var HomeVMobj = userData()
     @IBOutlet weak var logoutBtnLable: UIButton!
     @IBOutlet weak var userNameLable: UILabel!
