@@ -11,7 +11,7 @@ let scr_width = UIScreen.main.bounds.width
 let productcoll_width = UIScreen.main.bounds.width
 let scr_height = UIScreen.main.bounds.height
 class HomeVC: UIViewController {
-    
+    // i add new comment
    // var profileImg = ""
     //@IBOutlet weak var homeImageView: UIImageView!
     // home vc view modal object
