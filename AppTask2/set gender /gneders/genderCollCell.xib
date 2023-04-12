@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="genderCollCell" id="gTV-IL-0wX" customClass="genderCollCell" customModule="AppTask2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="166" height="153"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="166" height="153"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UWz-ti-H2Y">
+                        <rect key="frame" x="0.0" y="0.0" width="166" height="153"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPU-mN-JTq">
+                                <rect key="frame" x="0.0" y="0.0" width="166" height="153"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPI-fM-ViY">
+                                <rect key="frame" x="0.0" y="153" width="166" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gPI-fM-ViY" secondAttribute="bottom" id="2oO-j8-puY"/>
+                            <constraint firstItem="gPI-fM-ViY" firstAttribute="top" secondItem="NPU-mN-JTq" secondAttribute="bottom" id="P46-d3-Y8r"/>
+                            <constraint firstAttribute="trailing" secondItem="gPI-fM-ViY" secondAttribute="trailing" id="cYO-o6-0Vl"/>
+                            <constraint firstItem="NPU-mN-JTq" firstAttribute="top" secondItem="UWz-ti-H2Y" secondAttribute="top" id="g24-az-OqK"/>
+                            <constraint firstAttribute="trailing" secondItem="NPU-mN-JTq" secondAttribute="trailing" id="qo0-sJ-TiT"/>
+                            <constraint firstItem="NPU-mN-JTq" firstAttribute="leading" secondItem="UWz-ti-H2Y" secondAttribute="leading" id="unF-KF-dci"/>
+                            <constraint firstItem="gPI-fM-ViY" firstAttribute="leading" secondItem="UWz-ti-H2Y" secondAttribute="leading" id="xoy-Zp-uEu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="UWz-ti-H2Y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FG2-NE-j5A"/>
+                <constraint firstAttribute="bottom" secondItem="UWz-ti-H2Y" secondAttribute="bottom" id="OLz-4x-r0A"/>
+                <constraint firstAttribute="trailing" secondItem="UWz-ti-H2Y" secondAttribute="trailing" id="UHA-hU-BLj"/>
+                <constraint firstItem="UWz-ti-H2Y" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="l9r-5E-PYi"/>
+            </constraints>
+            <size key="customSize" width="166" height="153"/>
+            <connections>
+                <outlet property="genderImage" destination="NPU-mN-JTq" id="NLK-yO-qCc"/>
+                <outlet property="genderLable" destination="gPI-fM-ViY" id="pmQ-wa-1uy"/>
+                <outlet property="genderView" destination="UWz-ti-H2Y" id="t7a-nB-Cme"/>
+            </connections>
+            <point key="canvasLocation" x="169.56521739130437" y="87.388392857142847"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
